@@ -1,0 +1,30 @@
+{
+  "name": "kazooie.github.io",
+  "version": "1.0.0",
+  "description": "Steven Biersteker - Software Engineer",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run serve | npm run dev",
+    "serve": "./node_modules/.bin/http-server ./dev -p 8080",
+    "dev": "webpack-dev-server --progress --colors --port 8090",
+    "compile": "webpack --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Kazooie@github.com/kazooie/kazooie.github.io.git"
+  },
+  "author": "Steven Biersteker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kazooie/kazooie.github.io/issues"
+  },
+  "homepage": "https://github.com/kazooie/kazooie.github.io#readme",
+  "devDependencies": {
+    "babel-loader": "^5.2.2",
+    "http-server": "^0.8.0",
+    "react": "^0.13.3",
+    "uglify-loader": "^1.2.0",
+    "webpack": "^1.10.1",
+    "webpack-dev-server": "^1.10.1"
+  }
+}
