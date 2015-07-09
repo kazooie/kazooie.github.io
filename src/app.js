@@ -1,6 +1,7 @@
 import React from 'react';
+import MainPage from './components/MainPage.jsx';
 
 React.render(
-    <h1>Steven Biersteker</h1>,
+    <MainPage />,
     document.getElementById('react-content')
 );

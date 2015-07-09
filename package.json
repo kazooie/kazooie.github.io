@@ -4,10 +4,8 @@
   "description": "Steven Biersteker - Software Engineer",
   "main": "index.js",
   "scripts": {
-    "start": "npm run serve | npm run dev",
-    "serve": "./node_modules/.bin/http-server ./dev -p 8080",
-    "dev": "webpack-dev-server --progress --colors --port 8090",
-    "compile": "webpack --progress --colors"
+    "start": "gulp watch",
+    "compile": "gulp"
   },
   "repository": {
     "type": "git",
@@ -21,6 +19,12 @@
   "homepage": "https://github.com/kazooie/kazooie.github.io#readme",
   "devDependencies": {
     "babel-loader": "^5.2.2",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.0",
+    "gulp-shell": "^0.4.2",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-template": "^3.0.0",
     "http-server": "^0.8.0",
     "react": "^0.13.3",
     "uglify-loader": "^1.2.0",
